@@ -8,4 +8,16 @@
     border-radius: 10px;
     margin-top: 20px;
     cursor: pointer;
+    height: fit-content;
+}
+.titulo{
+    text-align: center;
+    color: white;
+    margin: 0px;
+}
+nav{
+    background-color: rgb(19, 19, 19);
+    margin: 0px;
+    padding: 20px;
+    
 }

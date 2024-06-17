@@ -1,9 +1,12 @@
 *{
     user-select: none;
+    margin: 0px;
 }
 
 .flex{
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .kanit-regular {

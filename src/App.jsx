@@ -17,7 +17,10 @@ function App() {
  
   return(
       <>
-      
+      <nav>
+        <h1 className='titulo'>V-oard</h1>
+      </nav>
+      <section className='flex'>
       {listas.map((lista, index) => ( 
 
           <div className="contenedorLista" key={index}>{lista}</div>
@@ -25,6 +28,7 @@ function App() {
       ))}
 
       <button className='botonListas' onClick={handleClick}>Agregar lista</button>
+      </section>
     </>
   )
 
