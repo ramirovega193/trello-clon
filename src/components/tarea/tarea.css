@@ -1,0 +1,9 @@
+.cajaMovil{
+    background-color: rgb(44, 44, 44);
+    margin: 1px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 17px;
+}
