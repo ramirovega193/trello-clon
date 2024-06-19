@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import TareaInput from '../tarea';
 import "./lista.css"
+import { FaPlus } from "react-icons/fa";
 
 export default function Lista({id}){
     
@@ -64,7 +65,7 @@ export default function Lista({id}){
           
           ))}    
           </div>
-            <button className='buttonTarea' onClick={handleClick}>+ Agregar tarea</button>
+            <button className='buttonTarea' onClick={handleClick}><FaPlus /> <span className='text-b'>Agregar tarea</span></button>
           </div>
 
           :

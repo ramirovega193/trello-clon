@@ -28,7 +28,6 @@
     outline: none;
     margin: 1px;
     padding: 10px;
-    width: 82%;
 }
 .buttonTarea{
     border: none;
@@ -42,6 +41,8 @@
     width: 100%;
     text-align: left;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 .buttonTarea:hover{
     background-color: #424242;
@@ -67,3 +68,15 @@
 
 }
 
+.text-b{
+    margin-left: 10px;
+}
+.contenedorInputs{
+    background-color: rgb(44, 44, 44);
+    margin: 1px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    width: 92%;
+    align-items: center;
+}
