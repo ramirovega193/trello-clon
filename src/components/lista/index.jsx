@@ -57,11 +57,11 @@ export default function Lista({id}){
 
           {estado ? 
           
-          <div className="lista">
+          <div className={`lista ${deleted ? "deleted" : ""}`}>
           <h1>{titulo}</h1>
           <div 
             id={id} 
-            className={`contenedor ${deleted ? "deleted" : ""}`}
+            className={`contenedor`}
             onDrop={handleDrop}
             onDragOver={handleDragOver}
 
