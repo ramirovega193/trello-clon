@@ -35,7 +35,6 @@
     background-color: transparent;
     color: white;
     font-size: 17px;
-    margin-top: 20px;
     cursor: pointer;
     padding: 10px;
     width: 100%;
@@ -79,4 +78,9 @@
     display: flex;
     width: 92%;
     align-items: center;
+}
+.contenedorBotones{
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import TareaInput from '../tarea';
 import "./lista.css"
 import { FaPlus } from "react-icons/fa";
+import { HiMiniXMark } from "react-icons/hi2";
 
 export default function Lista({id}){
     
@@ -9,6 +10,7 @@ export default function Lista({id}){
     const [estado,setEstado] = useState(false)
     const referenciaInput = useRef()
     const [titulo,setTitulo] = useState()
+    const [deleted,setDeleted] = useState(false)
 
     const handleClick = () =>{
 
@@ -44,6 +46,11 @@ export default function Lista({id}){
         }
 
       }
+      const handleDelete= () =>{
+
+        setDeleted(true)
+
+      }
 
       return(
         <>
@@ -54,7 +61,7 @@ export default function Lista({id}){
           <h1>{titulo}</h1>
           <div 
             id={id} 
-            className="contenedor"
+            className={`contenedor ${deleted ? "deleted" : ""}`}
             onDrop={handleDrop}
             onDragOver={handleDragOver}
 
@@ -65,7 +72,10 @@ export default function Lista({id}){
           
           ))}    
           </div>
+          <div className="contenedorBotones">
             <button className='buttonTarea' onClick={handleClick}><FaPlus /> <span className='text-b'>Agregar tarea</span></button>
+            <button className='iconButton' onClick={handleDelete}><HiMiniXMark /></button>
+          </div>
           </div>
 
           :
